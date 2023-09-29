@@ -1,0 +1,71 @@
+header{
+    text-align: center;
+    background-image: url(https://i.pinimg.com/564x/2d/d2/c4/2dd2c4b42556e84684450bd49fddd203.jpg);
+    color: #e09f3e;
+    width:auto;
+    padding: 10px;
+    height: 100px;
+    }
+
+body{
+    background-color: whitesmoke;
+}
+
+.fondo-letras {
+    background-color: #9e2a2b; 
+    padding: 2px 4px; 
+    }
+
+.milista {
+    text-align: center;
+
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:100px;
+}
+
+.image-container img {
+        margin-top: 50px;
+        width: 200px; /* Ancho de las imágenes */
+        height: 200px; /* Altura de las imágenes */
+        object-fit: cover;
+        border: 2px solid #000000;
+}
+
+.image-item {
+    background-color: #000000;
+        position: relative;
+        margin-top: 50px;
+        width: 200px; /* Ancho de las imágenes */
+        height: 200px; /* Altura de las imágenes */
+        border: 2px solid #000000;
+        overflow: hidden;
+        transition: transform 0.3s, filter 0.3s;
+}
+
+.image-item:hover {
+        transform: scale(1.1); /* Aumenta el tamaño de la imagen al pasar el cursor por encima */
+        filter: brightness(70%); /* Difumina la imagen al pasar el cursor por encima */
+}
+
+.image-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente para el texto */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    opacity: 0; /* Inicialmente, el texto no se muestra */
+    transition: opacity 0.3s;
+}
+
+.image-item:hover .image-text {
+    opacity: 1; /* Muestra el texto al pasar el cursor por encima de la imagen */
+}
